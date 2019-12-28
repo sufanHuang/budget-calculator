@@ -39,6 +39,7 @@ const ExpenseForm = ({
 
             <button type = "submit" className="btn">
                 {edit ? "edit" : "submit"}
+                <i className="fa fa-gavel btn-icon"></i>
             </button>
 
         </form>

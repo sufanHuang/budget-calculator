@@ -22,7 +22,7 @@ const ExpenseItem = ({
                     className='clear-btn'
                     onClick={()=>handleDelete(id)}
                 >
-                    < i className="fa fa-trash-alt"></i>
+                    < i className="fa fa-trash"></i>
                </button>
             </div>
         </li>

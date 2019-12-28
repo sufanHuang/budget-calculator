@@ -25,7 +25,7 @@ const ExpenseList =({
             {expenses.length > 0 && (
                 <button className="btn" onClick = {clearList}>
                    Clear Expenses
-                    < i className="fa fa-trash-alt"></i>
+                    < i className="fa fa-trash btn-icon"></i>
                 </button>
             )}
         </div>

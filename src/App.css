@@ -20,9 +20,17 @@ h1 {
   text-align: center;
   text-transform: capitalize;
   margin: 2rem ;
-  padding: 2rem;
+  padding-top: 2rem;
   color: var(--mainWhite);
   letter-spacing: 5px;
+}
+
+.header {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .App {
   margin: 0 auto;
@@ -30,7 +38,7 @@ h1 {
   width: 90%;
   background: var(--mainGrey);
   padding-bottom: 2rem;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 .form-center {
   display: flex;
@@ -51,7 +59,7 @@ label {
   background-color: var(--mainWhite);
   border: none;
   border-bottom: 1px solid var(--mainGrey);
-  border-radius: 0;
+  border-radius: 3px;
   outline: none;
   height: 3rem;
   width: 100%;
@@ -120,8 +128,6 @@ label {
 .amount {
   font-weight: 300;
   font-size: 1rem;
-  color: var(--mainWhite);
-  background-color: var(--primaryColor);
   border-radius: 2px;
   padding: 1px 3px;
 }

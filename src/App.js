@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import header from "./images/header.png"
 import ExpenseForm from "./components/ExpenseForm"
 import ExpenseList from "./components/ExpenseList"
 import Alert from "./components/Alert"
@@ -48,7 +49,7 @@ function App() {
     }
 
     const handleSubmit = (event) => {
-
+        event.preventDefault()
         if( charge !== "" && amount > 0){
 
 
@@ -66,16 +67,15 @@ function App() {
                     text: "Item added"
                 })
             }
-
-
             setCharge("")
             setAmount("")
-        }
 
-        handleAlert({
-            type: "danger",
-            text: "Please add an item with valid amount"
-        })
+        }else{
+            handleAlert({
+                type: "danger",
+                text: "Please add an item with valid amount"
+            })
+        }
     }
 
     const handleDelete = (id) => {
@@ -105,7 +105,7 @@ function App() {
         <main className = 'App'>
             {alert.show && <Alert type={alert.type} text={alert.text}/>}
             <h1>Budget Calculator</h1>
-
+            <img src={header} alt ="" className= "header"/>
             <ExpenseForm
                 handleCharge = { handleCharge }
                 handleAmount = { handleAmount }
